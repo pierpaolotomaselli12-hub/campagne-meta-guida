@@ -1,0 +1,3 @@
+Metti qui le creatività da preparare, una sottocartella per tipologia (es. tweet, note, video short).
+Se il lotto è diviso per pubblico freddo e caldo, crea prima le cartelle Prospecting e Retargeting
+e dentro ognuna le sottocartelle per tipologia. Claude ti guida passo passo.

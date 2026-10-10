@@ -1,0 +1,52 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"$CLAUDE_PROJECT_DIR/.claude/skills/meta-ads-guida-passo-passo/scripts/hook_setup.sh\""
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"$CLAUDE_PROJECT_DIR/.claude/skills/meta-ads-guida-passo-passo/scripts/hook_setup.sh\""
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(python3 .claude/skills/meta-ads-guida-passo-passo/scripts/controlla_setup.py)",
+      "Bash(python3 .claude/skills/meta-ads-guida-passo-passo/scripts/creativita.py:*)",
+      "Edit(./mio-setup.md)",
+      "Edit(./lavoro-in-corso.md)",
+      "Write(./lavoro-in-corso.md)"
+    ],
+    "deny": [
+      "mcp__claude_ai_Meta_Ads__ads_create_campaign",
+      "mcp__claude_ai_Meta_Ads__ads_create_ad_set",
+      "mcp__claude_ai_Meta_Ads__ads_create_ad",
+      "mcp__claude_ai_Meta_Ads__ads_create_creative",
+      "mcp__claude_ai_Meta_Ads__ads_create_custom_audience",
+      "mcp__claude_ai_Meta_Ads__ads_update_entity",
+      "mcp__claude_ai_Meta_Ads__ads_activate_entity",
+      "mcp__claude_ai_Meta_Ads__ads_creative_update",
+      "mcp__claude_ai_Meta_Ads__ads_creative_delete",
+      "mcp__claude_ai_Meta_Ads__ads_creative_upload_local_image",
+      "mcp__claude_ai_Meta_Ads__ads_creative_upload_media",
+      "mcp__claude_ai_Meta_Ads__ads_finalize_local_ad_image_upload",
+      "mcp__claude_ai_Meta_Ads__ads_delete_custom_audience",
+      "mcp__claude_ai_Meta_Ads__ads_delete_local_ad_image",
+      "mcp__claude_ai_Meta_Ads__ads_update_custom_audience",
+      "mcp__claude_ai_Meta_Ads__ads_update_custom_audience_users",
+      "mcp__claude_ai_Meta_Ads__ads_boost_ig_post"
+    ]
+  }
+}
